@@ -574,7 +574,7 @@ class TradingV1:
         payload = {
             'request': '/v1/order/status',
             'nonce': self._nonce(),
-            order_id: order_id
+            'order_id': order_id
         }
         return self._post('/v1/order/status', payload)
 
